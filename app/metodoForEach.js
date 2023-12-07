@@ -6,9 +6,7 @@ function exibirLivrosNaTela(listaDeLivros) {
     let disponibilidade = livro.quantidade > 0 ? "livro__imagens" : "livro__imagens indisponivel";
     elementoParaInserirLivros.innerHTML += `
         <div class="livro">
-          <img class="${disponibilidade}}" src="${livro.imagem}" alt="${
-      livro.alt
-    }" />
+          <img class="${disponibilidade}}" src="${livro.imagem}" alt="${livro.alt}" />
           <h2 class="livro__titulo">
             ${livro.titulo}
           </h2>
